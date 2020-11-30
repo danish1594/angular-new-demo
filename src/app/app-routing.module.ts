@@ -7,11 +7,11 @@ import { VideosComponent } from './videos/videos.component';
 import { IdComponent } from './id/id.component';
 import { AuthService } from './Auth.service';
 
-const routes: Routes =[{path:'',component:HomeComponent,canActivate:[AuthService]},
-{path:'images',component:ImagesComponent,canActivate:[AuthService]},
-{path:'videos',component:VideosComponent,canActivate:[AuthService]},
-{path:'login',component:LoginComponent},
-{path:'id',component:IdComponent,canActivate:[AuthService]}];
+const routes: Routes = [{ path: '', component: HomeComponent, canActivate: [AuthService] },
+{ path: 'images', component: ImagesComponent, canActivate: [AuthService] },
+{ path: 'videos', component: VideosComponent, canActivate: [AuthService] },
+{ path: 'login', component: LoginComponent },
+{ path: 'id', component: IdComponent, canActivate: [AuthService] }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

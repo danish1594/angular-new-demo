@@ -30,7 +30,7 @@ import { TokenService } from './id/token.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [ ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

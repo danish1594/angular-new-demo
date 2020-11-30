@@ -5,7 +5,7 @@ import { TokenService } from './id/token.service';
 @Injectable({
 
 
-    providedIn:'root'
+    providedIn: 'root'
 })
 
 
@@ -13,23 +13,23 @@ import { TokenService } from './id/token.service';
 
 
 
-export class AuthService implements CanActivate{
+export class AuthService implements CanActivate {
 
-constructor(public router:Router,public tokenService:TokenService){
-
-
-
-}
-canActivate():boolean{
-
-if(!this.tokenService.TokenValid()){
-this.router.navigate(['/login']);
-return false;
-}
-return true;
+    constructor(public router: Router, public tokenService: TokenService) {
 
 
-}
+
+    }
+    canActivate(): boolean {
+
+        if (!this.tokenService.TokenValid()) {
+            this.router.navigate(['/login']);
+            return false;
+        }
+        return true;
+
+
+    }
 
 }
 

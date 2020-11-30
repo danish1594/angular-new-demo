@@ -1,42 +1,29 @@
-
-
 <div class="row">
   <div class="col-sm-12">
-  
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <div class="navbar-header">
-    <a class="navbar-brand" href="#" style="color:darkslateblue;">Imgur</a>
+          <a class="navbar-brand" href="#" style="color:darkslateblue;">Imgur</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link active" href="/"> Home </a></li>
+            <li class="nav-item"><a class="nav-link" href="/images"> Images</a></li>
+            <li class="nav-item"><a class="nav-link" href="/videos"> Videos </a></li>
+            <li style="margin-left: 650px; "><a class="nav-link " href="/login"> Authentication </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
-  <div class="collapse navbar-collapse">
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item"><a class="nav-link active" href="/" > Home </a></li>
-    <li class="nav-item"><a  class="nav-link" href="/images" > Images</a></li>
-    <li class="nav-item"><a class="nav-link" href="/videos" > Videos </a></li>
-    <li style="margin-left: 650px; "><a class="nav-link " href="/login" > Authentication  </a></li>
-  </ul></div>
+
+</div>
+<div class="row">
+  <div class="col-sm-12">
+
+    <router-outlet></router-outlet>
   </div>
-  </nav>
-  </div>
-  
-  </div>
-  <div class="row">
-    <div class="col-sm-12">
-
-      <router-outlet></router-outlet>
-    </div>
-
-   
-  </div>
- 
 
 
-
-
-  
-
-
-
-
-
-
+</div>
