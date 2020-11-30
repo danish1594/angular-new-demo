@@ -6,9 +6,12 @@ import { AppComponent } from './app.component';
 import { ImagesComponent } from './images/images.component';
 import { VideosComponent } from './videos/videos.component';
 
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './Auhenticate/Authenticate.component';
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
+import { IdComponent } from './id/id.component';
+import { TokenService } from './id/token.service';
 
 
 
@@ -19,13 +22,15 @@ import { HomeComponent } from './home/home.component';
     ImagesComponent,
     VideosComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    IdComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
